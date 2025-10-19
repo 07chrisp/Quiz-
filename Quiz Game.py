@@ -9,7 +9,7 @@ start=int(input('Welcome to my quiz game. Enter 1 to begin: '))
 while start != 1:
     start=int(input('Welcome to my quiz game. Enter 1 to begin: '))
 #if you hit spacebar or leave it empty it counts
-#as an answer it counts as correct. fix it
+#as an answer and it counts as correct. fix it
 if start == 1:
     Q1=input('What year was the last time the Mets won the World Series?\nA. 2015\nB. 1989\nC. 1986\nD. 1969\nEnter your answer: ')
     if Q1 in correct_answers[0]:
@@ -44,3 +44,4 @@ if start == 1:
 
 average=(correct/6)*100
 print(f'Correct: {correct}\nIncorrect: {incorrect}\nAverage: %{average:.2f}')
+
